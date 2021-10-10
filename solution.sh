@@ -26,14 +26,15 @@ $ cat data.txt | grep millionth #cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 #Level 8 → Level 9
 $ sort data.txt | uniq -u #UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 #Level 9 → Level 10
-strings --data data.txt | grep === 
+$ strings --data data.txt | grep === 
 > ========== the*2i"4
 > ========== password
 > Z)========== is
 > &========== truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
 #Level 10 → Level 11
-base64 -d data.txt
+$ base64 -d data.txt
 > The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
 #Level 11 → Level 12
 #Level 12 → Level 13
 #Level 13 → Level 14
