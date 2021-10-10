@@ -1,3 +1,4 @@
+#link: https://overthewire.org/wargames/bandit/ 
 #To Get started, run on your terminal and connect to the instance using ssh
 $ ssh bandit0@bandit.labs.overthewire.org -p 2220
 password: bandit0
@@ -9,12 +10,13 @@ password: bandit0
 #Level4 → Level5
 #Level5 → Level6
 #Solution 1
-cd ./inhere/ && du -ab | grep 1033 #check for byte that is 1033bytes, but we don't check for readable and executable
+#check for byte that is 1033bytes, but we don't check for readable and executable
+cd ./inhere/ && du -ab | grep 1033 #./maybehere07/.file2
+cat ./maybehere07/.file2
 #Solution 2
 cd ./inhere
-find ./* -readable \! -executable -size 1033c 
-# ./maybehere07/.file2
-cat ./maybehere07/.file2 #password: DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+find ./* -readable \! -executable -size 1033c # ./maybehere07/.file2
+cat ./maybehere07/.file2 #DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 #Level 6 → Level 7
 #Level 7 → Level 8
 #Level 8 → Level 9
