@@ -16,18 +16,17 @@ $ cat ./maybehere07/.file2
 #Solution 2
 cd ./inhere
 $ find ./* -readable \! -executable -size 1033c # ./maybehere07/.file2
-$ cat ./maybehere07/.file2 
-> DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+$ cat ./maybehere07/.file2 # DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 
 #Level 6 → Level 7
 $ find ./* -user bandit7 -group bandit6 -size 33c
-$ cat ./var/lib/dpkg/info/bandit7.password #HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+$ cat ./var/lib/dpkg/info/bandit7.password # HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 
 #Level 7 → Level 8
-$ cat data.txt | grep millionth #cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+$ cat data.txt | grep millionth # cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
 #Level 8 → Level 9
-$ sort data.txt | uniq -u #UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+$ sort data.txt | uniq -u # UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 
 #Level 9 → Level 10
 $ strings --data data.txt | grep === 
@@ -42,7 +41,8 @@ base64 -d data.txt
 
 #Level 11 → Level 12
 $ data="$(cat data.txt)" && tr 'A-Za-z' 'N-ZA-Mn-za-m' <<< $data
-# The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu 
+# The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
 #Level 12 → Level 13
 
 #Level 13 → Level 14
