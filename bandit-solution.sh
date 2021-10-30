@@ -44,6 +44,13 @@ $ data="$(cat data.txt)" && tr 'A-Za-z' 'N-ZA-Mn-za-m' <<< $data
 # The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 
 #Level 12 → Level 13
+#This level is very tedious -- repeated steps. Please see this article: https://medium.com/secttp/overthewire-bandit-level-12-439f655f6fd5
+bandit12@bandit:/tmp/j123$ file data8.bin
+#data8.bin: gzip compressed data, was "data9.bin", last modified: Thu May  7 18:14:30 2020, max compression, from Unix
+bandit12@bandit:/tmp/j123$ mv data8.bin data9.gz
+bandit12@bandit:/tmp/j123$ gzip -dk data9.gz
+bandit12@bandit:/tmp/j123$ cat data9
+#The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 
 #Level 13 → Level 14
 #Level 14 → Level 15
