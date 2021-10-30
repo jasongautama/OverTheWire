@@ -1,7 +1,7 @@
 #link: https://overthewire.org/wargames/bandit/ 
 #To Get started, run on your terminal and connect to the instance using ssh
 $ ssh bandit0@bandit.labs.overthewire.org -p 2220
-password: bandit0
+#password: bandit0
 
 #Level0 → Level1
 #Level1 → Level2
@@ -31,17 +31,18 @@ $ sort data.txt | uniq -u #UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 
 #Level 9 → Level 10
 $ strings --data data.txt | grep === 
-> ========== the*2i"4
-> ========== password
-> Z)========== is
-> &========== truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+# ========== the*2i"4
+# ========== password
+# Z)========== is
+# &========== truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
 #Level 10 → Level 11
-$ base64 -d data.txt
-> The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+base64 -d data.txt
+# The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 
 #Level 11 → Level 12
 $ data="$(cat data.txt)" && tr 'A-Za-z' 'N-ZA-Mn-za-m' <<< $data
-> The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu 
+# The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu 
 #Level 12 → Level 13
 
 #Level 13 → Level 14
