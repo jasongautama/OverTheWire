@@ -151,8 +151,16 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 closed
 
 #Level 17 → Level 18
+diff passwords.old passwords.new
+42c42
+< w0Yfolrc5bwjS4qw5mq1nnQi6mF03bii
+---
+> kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd #this is the password to L18
 
 #Level 18 → Level 19
+ssh -t bandit18@$OTWURL -p 2220 "cat readme"
+IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
 #Level 19 → Level 20
 #Level 20 → Level 21
 #Level 21 → Level 22
